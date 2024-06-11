@@ -1,17 +1,19 @@
-import type { Action, ThunkAction } from "@reduxjs/toolkit"
+import type { ThunkAction, Action } from "@reduxjs/toolkit"
 import { configureStore } from "@reduxjs/toolkit"
 
-const store = configureStore({
+import playgroundReducer from "../components/Playground/store/slices"
+
+export const store = configureStore({
   reducer: {
-    //
+    playground: playgroundReducer,
   },
 })
 
-// export type AppDispatch = AppStore["dispatch"]
+export type AppDispatch = typeof store.dispatch
 export type RootState = ReturnType<typeof store.getState>
-export type AppThunk<ThunkReturnType = void> = ThunkAction<
-  ThunkReturnType,
+export type AppThunk<ReturnType = void> = ThunkAction<
+  ReturnType,
   RootState,
   unknown,
-  Action
+  Action<string>
 >

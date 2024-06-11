@@ -1,10 +1,11 @@
-// import styles from "./KeyPressed.module.css"
+import styles from "./KeyPressed.module.css"
 
 import { useEffect, useCallback } from "react"
 import { useAppDispatch } from "../../../../app/hooks"
 import { MAP_ARROW_CODES } from "../../constants"
 import { setEnteredValue } from "../../store/slices"
 import { useKeyPressedElement } from "./hooks"
+import { TypographyHeader, TypographyText } from "../../../UI"
 
 export interface IKeyPressedProps {
   isTimerActive: boolean
@@ -40,9 +41,16 @@ const KeyPressed: React.FC<IKeyPressedProps> = (props) => {
   })
 
   return (
-    <div>
-      <h3>KeyPressed</h3>
-      <span>{keyPressedElement}</span>
+    <div className={styles.wrapper}>
+      <TypographyHeader>Key pressed</TypographyHeader>
+      <div className={styles.container}>
+        <TypographyText>
+          Press the key corresponding to the key in "Random keys"
+        </TypographyText>
+        <div className={styles.iconWrapper}>
+          <span className={styles.icon}>{keyPressedElement}</span>
+        </div>
+      </div>
     </div>
   )
 }

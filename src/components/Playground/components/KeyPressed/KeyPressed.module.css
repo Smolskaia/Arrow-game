@@ -1,0 +1,23 @@
+.wrapper{
+  margin-top: 20px;
+}
+.container {
+  margin-bottom: 10px;
+}
+
+.iconWrapper {
+margin-top: var(--spacing-medium);
+margin-bottom: var(--spacing-medium);
+}
+
+.icon {
+display: inline-flex;
+width: 55px;
+height: 55px;
+justify-content: center;
+align-items: center;
+border: 1px solid var(--color-blue);
+border-radius: 50%;
+background-color: var(--color-gray);
+font-size: 30px;
+}

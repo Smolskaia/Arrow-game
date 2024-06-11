@@ -1,3 +1,8 @@
+import styles from "./Controls.module.css"
+import { PlayArrowRounded, PauseRounded } from "@mui/icons-material"
+
+import { Button } from "../../../UI/index"
+
 export interface IControlsProps {
   isTimerActive: boolean
   setIsTimerActive: React.Dispatch<React.SetStateAction<boolean>>
@@ -8,12 +13,22 @@ const Controls: React.FC<IControlsProps> = (props) => {
 
   return (
     <div>
-      <button onClick={() => setIsTimerActive(true)} disabled={isTimerActive}>
+      <Button
+        endIcon={<PlayArrowRounded />}
+        onClick={() => setIsTimerActive(true)}
+        disabled={isTimerActive}
+        className={styles.button}
+      >
         Play
-      </button>
-      <button onClick={() => setIsTimerActive(false)} disabled={!isTimerActive}>
+      </Button>
+      <Button
+        endIcon={<PauseRounded />}
+        onClick={() => setIsTimerActive(false)}
+        disabled={!isTimerActive}
+        className={styles.button}
+      >
         Pause
-      </button>
+      </Button>
     </div>
   )
 }

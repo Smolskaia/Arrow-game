@@ -1,0 +1,20 @@
+.button {
+  min-width: 100px;
+  padding: 0 16px;
+  line-height: 36px;
+  cursor: pointer;
+  background: none;
+  border-radius: 9px;
+  background-color: var(--color-black-lighter);
+  color: var(--color-yellow-light);
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+.button:hover {
+  background-color: #5A72A0
+}
+
+.button:disabled {
+  background-color: var(--color-gray-medium);
+  color: var(--color-yellow-light)
+}

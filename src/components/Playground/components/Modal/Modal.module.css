@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(3px);
+}
+
+.container {
+  width: 300px;
+  padding: var(--spacing-large);
+  outline: none;
+  background-color: var(--color-yellow-light);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.modalSuccess {
+  border: 1px solid var(--color--blue-green);
+  background-color: var(--color-blue-green-light);
+}
+
+.modalUnsuccess {
+  border: 1px solid var(--color-carrot);
+  background-color: var(--color-carrot-light);
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+}

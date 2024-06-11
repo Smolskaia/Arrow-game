@@ -1,0 +1,11 @@
+.text {
+  margin: 0;
+  margin-bottom: var(--spacing-medium);
+  font-size: 32px;
+  color: var(--color-gray-dark);
+  font-weight: bold;
+  background: var(--color--blue-green);;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -2,6 +2,8 @@
 
 Welcome to the Arrow Game project! This README provides an overview of the stack, features, and setup of the project. 
 
+link to the Game: https://smolskaia.github.io/Arrow-game/  
+
 ## Tech Stack
 
 The project is built using the following technologies:

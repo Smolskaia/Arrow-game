@@ -33,12 +33,12 @@ const Playground: React.FC = () => {
         dispatch(setSteps())
       }, INTERVAL_TIME)
     } else {
-      clearInterval(refreshIntervalId.current as NodeJS.Timeout)
+      clearInterval(refreshIntervalId.current as number)
     }
 
     return () => {
       // ретёрн будет выполняться при размонтировании компонента
-      clearInterval(refreshIntervalId.current as NodeJS.Timeout)
+      clearInterval(refreshIntervalId.current as number)
     }
   }, [isTimerActive, dispatch])
 

@@ -25,7 +25,7 @@ const KeyPressed: React.FC<IKeyPressedProps> = (props) => {
         isTimerActive
       ) {
         // если нажали одну из клавиш -стрелок, то диспатчим экшен и в качествве пейлоада передадим значение этой клавиши
-        console.log(e.key)
+        // console.log(e.key)
         dispatch(setEnteredValue(e.key))
       }
     },

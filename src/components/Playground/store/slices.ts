@@ -18,7 +18,7 @@ export const playgroundSlise = createSlice({
 
     setSteps: (state) => {
       const randomKeys = Math.floor(Math.random() * ARR_ARROW_CODES.length)
-      console.log(ARR_ARROW_CODES[randomKeys])
+      // console.log(ARR_ARROW_CODES[randomKeys])
 
       state.steps.push({
         step: state.currentStep,

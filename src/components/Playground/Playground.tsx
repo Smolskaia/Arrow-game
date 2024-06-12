@@ -17,6 +17,7 @@ const Playground: React.FC = () => {
   const state = useAppSelector((state) => state.playground)
   const dispatch = useAppDispatch()
 
+  // на эту переменную не влияют перерендеры, для этого используем Реф
   const refreshIntervalId = useRef<ReturnType<typeof setInterval> | null>(null)
 
   const [isTimerActive, setIsTimerActive] = useState<boolean>(false)

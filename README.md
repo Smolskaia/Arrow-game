@@ -66,19 +66,19 @@ Follow these steps to get the project up and running on your local machine:
 2. **Navigate to the project directory:**  
    ```cd arrow-game```  
 
-3. **Install dependencies:**
+3. **Install dependencies:**  
    ```npm install```
 
-4. **Run the development server:**
+4. **Run the development server:**  
    ```npm run dev```
 
-5. **Open the application in your browser:**
+5. **Open the application in your browser:**  
    Visit http://localhost:5173 to see the Arrow Game in action.
 
 
 ## Running Tests
 
-To run the tests, use the following command:
+To run the tests, use the following command:  
 ```npm run test```
 
 This will execute all tests defined in the project using Vitest.

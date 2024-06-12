@@ -14,7 +14,9 @@
     "lint:fix": "eslint --fix .",
     "type-check": "tsc --noEmit",
     "prepare": "husky install",
-    "gh-pages": "gh-pages -d build"
+    "gh-pages": "gh-pages -d dist",
+    "commit": "git add . && git commit -m \"Bash Script Commit\" && git push origin head",
+    "deploy": "npm run build && npm run gh-pages"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
